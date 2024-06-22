@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(21, 192, 9, 0.56) 0px 22px 70px 4px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #4CAF50;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #1f9319;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 16px;
+  outline: #1f9319;
+}
+
+input[type="file"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid #1f9319;
+  border-radius: 3px;
+  box-sizing: border-box;
+  outline: #1f9319;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Sell Your Item</h2>
+  <form onsubmit="return validateForm()">
+    <label for="Title">Title</label>
+    <input type="text" id="title" name="title" placeholder="Name of the item">
+    <br>
+    <label for="photo">Photo of Item:</label>
+    <input type="file" id="photo" name="photo" multiple/>
+    <br>
+    <label for="brand">Brand:</label>
+    <input type="text" id="brand" name="brand" placeholder="Brand of the item">
+    <br>
+    <label for="bought">When was it bought:</label>
+    <input type="text" id="bought" name="bought" placeholder="dd-mm-yyyy">
+    <br>
+    <label for="price">Price:</label>
+    <input type="text" id="price" name="price" placeholder="Price of the item">
+    <br>
+    <label for="sellerName">Seller's Name:</label>
+    <input type="text" id="sellerName" name="sellerName" placeholder="Your Name">
+    <br>
+    <label for="contact">Contact Number:</label>
+    <input type="text" id="contact" name="contact" placeholder="Your Contact Number">
+    <br>
+    <label for="location">Seller's Location:</label>
+    <input type="text" id="location" name="location" placeholder="Your Location">
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+<script>
+    function validateForm() {
+      var photo = document.getElementById("photo").value;
+      var name = document.getElementById("title").value;
+      var brand = document.getElementById("brand").value;
+      var bought = document.getElementById("bought").value;
+      var price = document.getElementById("price").value;
+      var sellerName = document.getElementById("sellerName").value;
+      var contact = document.getElementById("contact").value;
+      var location = document.getElementById("location").value;
+  
+      if (photo == "" || name == "" || brand == "" || bought == "" || price == "" || sellerName == "" || contact == "" || location == "") {
+        alert("Please fill in all the fields");
+        return false;
+      } else {
+        return true;
+      }
+    }
+  </script>
+</body>
+</html>
