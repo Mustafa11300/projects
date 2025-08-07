@@ -24,7 +24,7 @@ CGPA = (sum of (grade × credit)) / (sum of credits)
 
 
 ### 🖥️ How to Use
-1. Open `cgpa_calculator.html` in your browser.
+1. Download or clone the repository.
 2. Input your grade points and corresponding credit hours.
 3. Click the "Calculate" button to see your CGPA.
 
@@ -47,7 +47,7 @@ An interactive number guessing game where users try to guess a randomly generate
 3. JavaScript provides feedback and ends the game when guessed correctly.
 
 ### 🖥️ How to Use
-1. Open `guessing_game.html` in your browser.
+1. Download or clone the repository.
 2. Start guessing the number.
 3. Follow the hints and try to guess it in as few attempts as possible.
 
@@ -61,6 +61,5 @@ An interactive number guessing game where users try to guess a randomly generate
 
 ---
 
-## 📁 Project Structure
 
 
